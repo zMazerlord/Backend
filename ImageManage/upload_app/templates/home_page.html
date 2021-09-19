@@ -1,0 +1,13 @@
+<!-- Метод POST и установлен enctype -->
+<form method="post" enctype="multipart/form-data">
+{% csrf_token %}
+  <input type="file" name="myfile1">
+  <button type="submit">Загрузка</button>
+</form>
+<div > {{cv_output}}</div>
+
+<form action="/url_hex/" method="post">
+    <label for="hex_code">Enter HEX-code: </label>
+    <input id="hex_code" type="text" name="name_field">
+    <input type="submit" value="OK">
+</form>
